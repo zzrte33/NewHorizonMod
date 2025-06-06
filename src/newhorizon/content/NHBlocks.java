@@ -385,6 +385,7 @@ public class NHBlocks{
 			range = 640;
 			
 			minWarmup = 0.9f;
+			trackingRange = range * 1.4f;
 			shootWarmupSpeed /= 2;
 			inaccuracy = 2;
 			shootY -= 5;
