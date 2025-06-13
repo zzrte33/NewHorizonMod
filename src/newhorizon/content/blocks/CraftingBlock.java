@@ -191,14 +191,14 @@ public class CraftingBlock {
             addLink(2, 0, 1,  /**/ 2, 1, 1,/**/
                     -1, 0, 1, /**/-1, 1, 1 /**/);
 
-            craftTime = 40f;
+            craftTime = 120f;
             itemCapacity = 20;
 
-            addInput(ItemStack.with(Items.titanium, 2), LiquidStack.with(NHLiquids.quantumLiquid, 6 / 60f));
-            addInput(ItemStack.with(Items.titanium, 2, Items.graphite, 1), LiquidStack.empty);
+            addInput(ItemStack.with(Items.titanium, 6), LiquidStack.with(NHLiquids.quantumLiquid, 6 / 60f));
+            addInput(ItemStack.with(Items.titanium, 6, Items.graphite, 3), LiquidStack.empty);
 
             consumePower(180f / 60f);
-            outputItems = with(NHItems.presstanium, 2);
+            outputItems = with(NHItems.presstanium, 6);
 
             drawer = new DrawMulti(
                     new DrawRegionRotated(){{
@@ -225,15 +225,15 @@ public class CraftingBlock {
             addLink(2, 0, 1,  /**/ 2, 1, 1,/**/
                     -1, 0, 1, /**/-1, 1, 1 /**/);
 
-            craftTime = 40f;
+            craftTime = 120f;
             itemCapacity = 20;
 
-            addInput(ItemStack.with(Items.silicon, 2), LiquidStack.with(NHLiquids.quantumLiquid, 4 / 60f));
-            addInput(ItemStack.with(Items.silicon, 2, Items.copper, 3), LiquidStack.empty);
-            addInput(ItemStack.with(Items.silicon, 2, Items.beryllium, 3), LiquidStack.empty);
+            addInput(ItemStack.with(Items.silicon, 6), LiquidStack.with(NHLiquids.quantumLiquid, 4 / 60f));
+            addInput(ItemStack.with(Items.silicon, 6, Items.copper, 9), LiquidStack.empty);
+            addInput(ItemStack.with(Items.silicon, 6, Items.beryllium, 9), LiquidStack.empty);
 
             consumePower(240f / 60f);
-            outputItems = with(NHItems.juniorProcessor, 2);
+            outputItems = with(NHItems.juniorProcessor, 6);
 
             drawer = new DrawMulti(
                     new DrawRegionRotated(){{
