@@ -794,7 +794,7 @@ public class NHPostProcess {
     private static void adjustVanillaTurret() {
 	adjustContent(Blocks.tsunami, content -> {   
 	    LiquidTurret turret = (LiquidTurret) content;
-	    turret.ammoTypes.put(NHLiquid.xen, new LiquidBulletType() {{
+	    turret.ammoTypes.put(NHLiquid.xenfluid, new LiquidBulletType() {{
 	        lifetime = 49f;
                 speed = 4f;
                 knockback = 1.3f;
