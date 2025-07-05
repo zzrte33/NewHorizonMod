@@ -804,7 +804,6 @@ public class NHPostProcess {
                 ammoMultiplier = 0.4f;
                 statusDuration = 60f * 4f;
                 damage = 0.2f;
-                layer = Layer.bullet - 2f;
             }});
         });
         adjustContent(Blocks.swarmer, content -> {
