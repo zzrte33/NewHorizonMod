@@ -792,20 +792,6 @@ public class NHPostProcess {
     }
 
     private static void adjustVanillaTurret() {
-	adjustContent(Blocks.tsunami, content -> {   
-	    LiquidTurret turret = (LiquidTurret) content;
-	    turret.ammoTypes.put(NHLiquids.xenFluid, new LiquidBulletType() {{
-	        lifetime = 49f;
-                speed = 4f;
-                knockback = 1.3f;
-                puddleSize = 8f;
-                orbSize = 4f;
-                drag = 0.001f;
-                ammoMultiplier = 0.4f;
-                statusDuration = 60f * 4f;
-                damage = 0.2f;
-            }});
-        });
         adjustContent(Blocks.swarmer, content -> {
             ItemTurret turret = (ItemTurret) content;
             turret.ammoTypes.put(NHItems.zeta, new MissileBulletType() {{
@@ -849,6 +835,20 @@ public class NHPostProcess {
                 ammoMultiplier = 4;
                 shootEffect = Fx.shootBig;
                 hitEffect = despawnEffect = Fx.none;
+            }});
+        });
+	adjustContent(Blocks.tsunami, content -> {   
+	    LiquidTurret turret = (LiquidTurret) content;
+	    turret.ammoTypes.put(NHLiquids.xenFluid, new LiquidBulletType() {{
+	        lifetime = 49f;
+                speed = 4f;
+                knockback = 1.3f;
+                puddleSize = 8f;
+                orbSize = 4f;
+                drag = 0.001f;
+                ammoMultiplier = 0.4f;
+                statusDuration = 60f * 4f;
+                damage = 0.2f;
             }});
         });
         adjustContent(Blocks.fuse, content -> {
