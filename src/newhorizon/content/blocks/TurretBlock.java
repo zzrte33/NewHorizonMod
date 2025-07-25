@@ -439,6 +439,49 @@ public class TurretBlock {
                                 }))
                         );
                     }}
+                NHItems.hyperProcessor, new ArtilleryBulletType() {{
+                        damage = 5000;
+                        speed = 6.5f;
+                        lifetime = 200f;
+                        hitShake = despawnShake = 2f;
+                        status = NHStatusEffects.emp3;
+                        hitSound = Sounds.none;
+
+                        fragBullet = new DOTBulletType() {{
+                            DOTDamage = damage = 2000f;
+                            DOTRadius = 16f;
+                            radIncrease = 0.28f;
+                            effect = NHStatusEffects.end;
+                            fx = NHFx.triSpark2;
+                            lightningColor = Color.acid;
+                        }};
+                        fragBullets = 1;
+
+                        homingRange = 22f;
+                        homingPower = 0.13f;
+
+                        trailChance = 0.8f;
+                        trailEffect = NHFx.triSpark3;
+
+                        backColor = lightColor = lightningColor = trailColor = hitColor = Color.acid;
+                        rangeChange = 45;
+
+                        despawnEffect = Fx.none;
+                        hitEffect = new OptionalMultiEffect(
+                                NHFx.smoothColorCircle(NHColor.ancient, 100f, 125f, 0.3f),
+                                NHFx.circleOut(150f, 100f, 4),
+                                NHFx.circleOut(78f, 75f, 2),
+                                NHFx.subEffect(130f, 85f, 12, 30f, Interp.pow2Out, ((i, x, y, rot, fin) -> {
+                                    float fout = Interp.pow2Out.apply(1 - fin);
+                                    float finpow = Interp.pow3Out.apply(fin);
+                                    Tmp.v1.trns(rot, 25 * finpow);
+                                    Draw.color(NHColor.ancient);
+                                    for (int s : Mathf.signs) {
+                                        Drawf.tri(x, y, 14 * fout, 30 * Mathf.curve(finpow, 0, 0.3f) * NHFx.fout(fin, 0.15f), rot + s * 90);
+                                    }
+                                }))
+                        );
+                    }}
             );
 
             reload = 120f;
