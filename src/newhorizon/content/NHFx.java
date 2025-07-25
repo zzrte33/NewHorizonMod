@@ -1200,6 +1200,14 @@ public class NHFx {
             Fill.poly(e.x + x, e.y + y, 3, e.fout() * 8f * rand.random(0.8f, 1.2f), e.rotation + randN * e.fin());
         });
     });
+    triSpark3 = new Effect(26, e -> {
+        rand.setSeed(e.id);
+        Draw.color(Color.acid, Color.white, e.fin());
+        randLenVectors(e.id, 3, 3f + 24f * e.fin(), 5f, (x, y) -> {
+            float randN = rand.random(120f);
+            Fill.poly(e.x + x, e.y + y, 3, e.fout() * 8f * rand.random(0.8f, 1.2f), e.rotation + randN * e.fin());
+        });
+    });
 
     public static float fslope(float fin) {
         return (0.5f - Math.abs(fin - 0.5f)) * 2f;
