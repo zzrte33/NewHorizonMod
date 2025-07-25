@@ -444,16 +444,16 @@ public class TurretBlock {
                         speed = 6.5f;
                         lifetime = 200f;
                         hitShake = despawnShake = 2f;
-                        status = NHStatusEffects.emp3;
+                        status = NHStatusEffects.end;
                         hitSound = Sounds.none;
 
                         fragBullet = new DOTBulletType() {{
                             DOTDamage = damage = 2000f;
-                            DOTRadius = 16f;
+                            DOTRadius = 6f;
                             radIncrease = 0.28f;
                             effect = NHStatusEffects.end;
                             fx = NHFx.triSpark2;
-                            lightningColor = Pal.acid;
+                            lightningColor = Pal.sap;
                         }};
                         fragBullets = 1;
 
@@ -463,7 +463,7 @@ public class TurretBlock {
                         trailChance = 0.8f;
                         trailEffect = NHFx.triSpark3;
 
-                        backColor = lightColor = lightningColor = trailColor = hitColor = Pal.acid;
+                        backColor = lightColor = lightningColor = trailColor = hitColor = Pal.sap;
                         rangeChange = 45;
 
                         despawnEffect = Fx.none;
