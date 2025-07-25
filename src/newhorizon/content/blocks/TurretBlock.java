@@ -438,7 +438,7 @@ public class TurretBlock {
                                     }
                                 }))
                         );
-                    }}
+                    }},
                 NHItems.hyperProcessor, new ArtilleryBulletType() {{
                         damage = 5000;
                         speed = 6.5f;
