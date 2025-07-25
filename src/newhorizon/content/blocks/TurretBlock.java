@@ -453,7 +453,7 @@ public class TurretBlock {
                             radIncrease = 0.28f;
                             effect = NHStatusEffects.end;
                             fx = NHFx.triSpark2;
-                            lightningColor = Color.acid;
+                            lightningColor = Pal.acid;
                         }};
                         fragBullets = 1;
 
@@ -463,7 +463,7 @@ public class TurretBlock {
                         trailChance = 0.8f;
                         trailEffect = NHFx.triSpark3;
 
-                        backColor = lightColor = lightningColor = trailColor = hitColor = Color.acid;
+                        backColor = lightColor = lightningColor = trailColor = hitColor = Pal.acid;
                         rangeChange = 45;
 
                         despawnEffect = Fx.none;
