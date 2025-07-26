@@ -464,11 +464,11 @@ public class TurretBlock {
                         trailEffect = NHFx.triSpark3;
 
                         backColor = lightColor = lightningColor = trailColor = hitColor = Pal.plastanium;
-                        rangeChange = 60;
+                        rangeChange = 240;
 
                         despawnEffect = Fx.none;
                         hitEffect = new OptionalMultiEffect(
-                                NHFx.smoothColorCircle(NHColor.ancient, 100f, 125f, 0.3f),
+                                NHFx.smoothColorCircle(Pal.plastanium, 100f, 125f, 0.3f),
                                 NHFx.circleOut(150f, 100f, 4),
                                 NHFx.circleOut(78f, 75f, 2),
                                 NHFx.subEffect(130f, 85f, 12, 30f, Interp.pow2Out, ((i, x, y, rot, fin) -> {
