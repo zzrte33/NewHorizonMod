@@ -475,7 +475,7 @@ public class TurretBlock {
                                     float fout = Interp.pow2Out.apply(1 - fin);
                                     float finpow = Interp.pow3Out.apply(fin);
                                     Tmp.v1.trns(rot, 25 * finpow);
-                                    Draw.color(NHColor.ancient);
+                                    Draw.color(Pal.plastanium);
                                     for (int s : Mathf.signs) {
                                         Drawf.tri(x, y, 14 * fout, 30 * Mathf.curve(finpow, 0, 0.3f) * NHFx.fout(fin, 0.15f), rot + s * 90);
                                     }
