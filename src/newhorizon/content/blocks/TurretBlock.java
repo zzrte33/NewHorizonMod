@@ -457,7 +457,7 @@ public class TurretBlock {
                         }};
                         fragBullets = 1;
 
-                        homingRange = 22f;
+                        homingRange = 32f;
                         homingPower = 0.13f;
 
                         trailChance = 0.8f;
