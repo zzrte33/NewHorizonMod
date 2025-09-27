@@ -1,6 +1,5 @@
 package newhorizon.expand.units.ablility;
 
-import arc.audio.Sound;
 import arc.func.Cons;
 import arc.graphics.Color;
 import arc.graphics.g2d.Draw;
@@ -14,13 +13,12 @@ import arc.util.Time;
 import arc.util.Tmp;
 import mindustry.Vars;
 import mindustry.content.Fx;
-import mindustry.content.Sounds;
 import mindustry.entities.abilities.Ability;
+import mindustry.entities.abilities.ShieldArcAbility;
 import mindustry.entities.units.WeaponMount;
 import mindustry.gen.Bullet;
 import mindustry.gen.Groups;
 import mindustry.gen.Unit;
-import mindustry.gen.Units;
 import mindustry.graphics.Layer;
 import mindustry.graphics.Pal;
 import mindustry.type.UnitType;
