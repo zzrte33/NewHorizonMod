@@ -27,8 +27,7 @@ import mindustry.type.UnitType;
 import mindustry.ui.Bar;
 
 /**
- * Enhanced version of ShieldArcAbility with turret weapon mounting support.
- * Combines features from both ShieldArcAbility and original TurretShield.
+ * Copy From {@link ShieldArcAbility}
  */
 public class TurretShield extends Ability {
     private static Unit paramUnit;
