@@ -809,12 +809,12 @@ public class NHPostProcess {
 				lightningDamage = 8;
 				lightning = 2;
                 lightningLength = 1;
-				lightningLengthRand = 1;
+				lightningLengthRand = 2;
 				speed = 6;
                 width = 7f;
                 height = 9f;
-                lifetime = 30f;
-                ammoMultiplier = 4;
+                lifetime = 33f;
+                ammoMultiplier = 5;
 				reloadMultiplier = 1.25f;
 				pierceArmor = true;
                 hitEffect = despawnEffect = Fx.hitBulletColor;
