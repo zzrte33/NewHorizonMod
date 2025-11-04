@@ -808,7 +808,7 @@ public class NHPostProcess {
                 rangeChange = 40;
 				lightningDamage = 8;
 				lightning = 2;
-                lightningLength = 2;
+                lightningLength = 3;
 				lightningLengthRand = 1;
 				speed = 6;
                 width = 7f;
