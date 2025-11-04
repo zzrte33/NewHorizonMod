@@ -817,8 +817,7 @@ public class NHPostProcess {
                 ammoMultiplier = 4;
 				pierceArmor = true;
                 hitEffect = despawnEffect = Fx.hitBulletColor;
-                lightningColor = hitColor = backColor = trailColor = NHItems.zeta.color;
-                frontColor = Pal.copperAmmoFront;
+                frontColor = lightningColor = hitColor = backColor = trailColor = NHItems.zeta.color;
             }});
         });
         adjustContent(Blocks.wave, content -> {
