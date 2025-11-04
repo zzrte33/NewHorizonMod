@@ -804,17 +804,18 @@ public class NHPostProcess {
 		adjustContent(Blocks.duo, content -> {
             ItemTurret turret = (ItemTurret) content;
             turret.ammoTypes.put(NHItems.zeta, new BasicBulletType() {{
-				damage = 40;
+				damage = 30;
                 rangeChange = 40;
 				lightningDamage = 8;
 				lightning = 2;
-                lightningLength = 12;
-				lightningLengthRand = 2;
-				speed = 5;
+                lightningLength = 1;
+				lightningLengthRand = 1;
+				speed = 6;
                 width = 7f;
                 height = 9f;
-                lifetime = 60f;
+                lifetime = 30f;
                 ammoMultiplier = 4;
+				reloadMultiplier = 1.25f;
 				pierceArmor = true;
                 hitEffect = despawnEffect = Fx.hitBulletColor;
                 frontColor = lightningColor = hitColor = backColor = trailColor = NHItems.zeta.color;
