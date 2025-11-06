@@ -130,13 +130,12 @@ public class PowerBlock {
             armor = 50;
             consumePowerBuffered(1000000f);
         }};
-
-        //wip
+        
         crystalDecompositionThermalGenerator = new RecipeGenericCrafter("crystal-decomposition-thermal-generator") {{
             requirements(Category.power, ItemStack.with(
                      NHItems.hardLight, 10,
-                     NHItems.silicar, 30,
-                     NHItems.silicon, 15
+                     NHItems.graphite, 25,
+                     NHItems.silicon, 25
             ));
             addLink(2, 0, 1, 2, 1, 1);
 
@@ -223,6 +222,7 @@ public class PowerBlock {
                     Items.silicon, 100
             ));
             health = 300;
+            armor = 2f;
             size = 3;
             rotate = false;
             itemCapacity = 30;
@@ -247,9 +247,15 @@ public class PowerBlock {
         }};
 
         psiGenerator = new ThermalGenerator("psi-generator") {{
-            requirements(Category.power, BuildVisibility.shown, ItemStack.with(NHItems.metalOxhydrigen, 60, NHItems.juniorProcessor, 45, NHItems.presstanium, 60));
+            requirements(Category.power, ItemStack.with(
+                    NHItems.hardLight, 25, 
+                    NHItems.juniorProcessor, 50, 
+                    NHItems.carbide, 50, 
+                    NHItems.metalOxhydrigen, 25
+            ));
             size = 2;
-            health = 320;
+            health = 600;
+            armor = 4f;
             floating = true;
             powerProduction = 300f / 60f;
 
